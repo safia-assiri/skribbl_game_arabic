@@ -1,0 +1,48 @@
+<div class="center-container">
+      <div class="card">
+
+        <img [src]="'assets/logo.png'" alt="شعار خربشة">
+        <label class="label">
+        <input
+        type="text"
+        class="input"
+        placeholder="ادخل اسمك"
+      />    
+      </label>
+      <br>
+      <br>    
+      <div class="virtical">
+        <button (click)="goBack()" style="background: none; border: none; padding: 0;">
+          <img 
+            [src]="'assets/icons8-back-100.png'" 
+            class="left-icon" 
+            alt="Back icon"
+            style="cursor: pointer;">
+        </button>
+              <div class="character">
+        <div class="head">
+          <div class="eyes"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="body"></div>
+      </div>
+      <button (click)="goNext()" style="background: none; border: none; padding: 0;">
+        <img 
+          [src]="'assets/icons8-back-100.png'" 
+          class="right-icon" 
+          alt="Back icon"
+          style="cursor: pointer;">
+      </button>
+      </div>
+      <br>
+      <br>
+      <button class="game">إلعب</button>
+        <br>
+        <button
+        class="room"
+        >إنشاء غرفة خاصة</button>
+        <br>
+        <br>
+    </div>
+</div>
+  

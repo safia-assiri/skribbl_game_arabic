@@ -1,0 +1,29 @@
+html, body {
+  height: 100%; 
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+app-play {
+  display: block;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+app-info {
+  position: relative;
+  width: 100%;
+  background-color: rgba(105, 173, 101, 0.7);
+  padding-bottom: 3.5rem;
+  padding-top: 1.5rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+  min-height: fit-content;
+}

@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-image: url('assets/backgroundblur.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eef5fa;
+  min-height: 100%;
+}
+
+app-root {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+
+}
+
+.vibes-regular {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 24px;
+}

@@ -1,0 +1,45 @@
+<div class="inline">
+  <div class="card_1">
+  <div>
+    <br>
+  <p style="font-weight:bold; font-size: 26px; margin:1px;">عن اللعبة</p>
+  <br>
+    <p style="margin-block-start: 0em;"> الرسم والكلمات
+       هي لعبة مجانية على الإنترنت تعتمد على الرسم والتخمين. في كل جولة، يقوم اللاعب برسم كلمة معينة بينما يحاول الآخرون تخمينها في أقرب وقت ممكن للحصول على نقاط. الشخص الذي يحصل على أكبر عدد من النقاط في نهاية اللعبة هو الفائز
+      اللعبة ممتعة وسهلة، ويمكن لعبها مع الأصدقاء أو العائلة في أي وقت.</p>
+  </div>
+  <br>
+  <br>
+
+  </div>
+  <div class="card_2">
+    <div>
+      <br>
+    <p style="font-weight:bold; font-size: 26px; margin:1px;">كيفية اللعب</p>
+      <div id="tutorial">
+        <div class="pages">
+          <div 
+          class="page" 
+          *ngFor="let step of steps; let i = index" 
+          [class.active]="currentPage === i"> 
+          <img [src]="step.image" alt="Step image" class="step-image">
+          <div class="description">{{ step.text }}</div>
+        </div>        
+        </div>
+        <div class="navigation">
+          <div class="dots">
+            <div 
+              *ngFor="let dot of steps; let i = index" 
+              class="dot" 
+              [class.active]="currentPage === i" 
+              (click)="goToPage(i)" 
+              [attr.aria-label]="'Go to step ' + (i + 1)">
+              <div class="inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+</div>
